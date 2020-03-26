@@ -310,7 +310,7 @@ h2{
      text-align: center;
     color: #0d8df0;
     font-size: large;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 0px;
     text-transform: uppercase; 
 }
@@ -361,6 +361,7 @@ h2{
 .input-group input {
   width: 70%;
   font-size: smaller;
+  text-align: center;
   margin: auto;
   padding: 10 30px;
   margin-top: 10px;
