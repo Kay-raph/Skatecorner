@@ -15,7 +15,7 @@
     -o-transition: 0.5s;
 }
 .header a{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker';
     text-decoration: none;
     color: #0d8df0;
     display: inline-block;
@@ -218,12 +218,21 @@ h2 {
   .sidenav a {font-size: 18px;
       padding-top: 4px 4px 4px 10px;
     } */
-    .header a{
+    /* .header a{
     text-decoration: none;
     color: #0d8df0;
     display: inline-block;
     padding: 15px;
     margin-top: -25px;
+    font-size: small;
+} */
+.header a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: #0d8df0;
+    display: inline-block;
+    padding: 5px;
+    margin-top: -10px;
     font-size: small;
 }
     .footer{
