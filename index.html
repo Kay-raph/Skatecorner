@@ -16,7 +16,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
      <script src="https://code.jquery.com/jquery-3.3.1.min.js "
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
-    <script src="js/script.js"></script>
+    
     <link rel="icon" href="images\skaterr.png">
     <title>Skatecorner</title>
     
@@ -26,24 +26,90 @@
 html{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0px;
-    background-image: url("images/backg.jpg");
+    background-image: url("images/sb.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+.logi a{
+  width: 50%;
+  margin: auto;
+  padding: 20 50px;
+  margin-top: 10px;
+
+}
+/* style create account */
+.cr{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+   width: 50%;
+  margin: auto;
+  padding: 20 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cr:hover {
+  background-color: #0d8fd0;
+}
+@media screen and (max-width: 768px) {
+    body,
+    html{
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    background-image: url("images/bts (9).jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .logi a{
+  width: 70%;
+  margin: auto;
+  padding: 20 50px;
+  margin-top: 10px;
+
+}
+.cr a{
+    font-size: small;
+     background-color: black;
+  color: white;
+  cursor: pointer;
+   width: 50%;
+  margin: auto;
+  padding: 20 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+}
     </style>
-<body>
-<!--     
+<body>    
 <div class="header">
-    <a href="https://www.facebook.com"><img src="soc/facebook.png"></a>
-    <a href="https://www.twitter.com"><img src="soc/twitter.png"></a>
-        <a href="https://www.instagram.com"><img src="soc/inst.png"></a>
-        <a href="https://www.pinterest.com"><img src="soc/pinterest.png"></a>
-        <a href="https://www.meetup.com"><img src="soc/meetup.png"></a>
-    </div> -->
+    <a href="contact.html"><b>CONTACT US</b></a>
+    <a href="about.html"><b>ABOUT US</b></a>
+        <a href="signup.html"><b>SIGN UP</b></a>
+    </div>
     <div class="mg">
         <a href="index.html"><img src="images/skaterr.png"></a>
-        </div><br><br><br><br>
+        </div><br><br><br>
 <!-- <div id="mySidenav" class="sidenav">
   
   <a href="#">About</a>
@@ -64,7 +130,7 @@ html{
 <script>
 
 </script> -->
-<br>
+<br><br>
 <div class="link"><p id="lip"><b>Click to follow us</b></p>
 <ul id="ule">
     <li><a href="https://www.facebook.com"><img src="soc/facebook.png"><b>Facebook</b></a></li>
@@ -74,12 +140,57 @@ html{
     <li><a href="https://www.github.io.com/kay-raph"><img src="soc/github.png"><b>Github</b></a></li>
     <li><a href="https://www.youtube.com/kayraph"><img src="soc/yut.png"><b>Youtube</b></a></li>
     <li><a href="https://www.meetup.com/kayraph"><img src="soc/meetup.png"><b>MeetUp</b></a></li>
+   
 </ul>
 </div>
-<br><br>
+<br>
+<div class="form-box">
+    <h2><b>Welcome to SkateCorner</b></h2>
+    <form class="col-sm-6 offset-sm-3 text-center" id="frm"><br>
+        <p style="color:#0d8df0; font-size: large;"><b>Sign In</b></p>
+        <div class="input-group">
+            <input type="email/text" style="color: honeydew; font-size: large;" placeholder="Email or Username" required autofocus autocomplete>
+            <input type="password" style="color: honeydew; font-size: large;" placeholder="Password" required>
+        </div>
+        <button type="submit" class="submit-btn"><a style="text-decoration: none;" href=""><b>LOGIN</b></a></button>
+       <div class="signup">
+        <a href="#"><p><b>Forgot Password?</b></p></a>
+        <p style="color: white;"><b>Login with</b></p>
+        <!-- <a href="#">
+            <p><b>facebook</b></p>
+        </a>
+        <p><b>or</b></p> -->
+        <div class="logi">
+            <a href="#" class="fb btn">
+                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+            </a>
+            <a href="#" class="twitter btn">
+                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+            </a>
+            <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                </i> Login with Google+
+            </a>
+        </div>
+        <p style="color: white;"><b>or</b></p>
+        
+        <div class="cr" id="#cr"><a href="signup.html"><p><b>Create an Account</b></p></a></div>
+        </div><br>
+        <br>
+        </form>
+        
+</div><br><br><br><br>
     <div class="footer">
-  <p>&copy;2020<a><b>||</b></a>All Rights Reserved.</p>
+  <p>&copy;2020<a><b>||</b></a>All Rights Reserved.Design by Kevin Raphael</p>
 </div>
- 
+<script>
+    $(document).ready(function () {
+            $("#ule").hide();
+            $("#lip").click(function () {
+                $(".link #lip").toggle(1000);
+                $(".link #ule").slideDown(1000).show(1000);
+            });
+        });
+</script>
+<script src="scripts.js"></script>
 </body>
 </html> 
