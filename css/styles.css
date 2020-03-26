@@ -125,7 +125,7 @@ h2 {
     text-align: center;
     color: #0d8df0;
     font-size: 2.5rem;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker';
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -322,6 +322,7 @@ h2{
 }
 .form-box h2{
     font-size: small;
+    margin-left: 45%;
 
 }
 #frm {
@@ -329,22 +330,24 @@ h2{
     background-color: transparent;
     opacity: 0.9;
     border-radius: 10px;
-    margin-left: 37%;
-    width: 250px;
+    margin-left: 50%;
+    width: 220px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.input-group[input-type]{
-    font-size: smaller;
-}
+
 .signup a{
     text-decoration: none;
     color: #0d8df0;
 }
 .signup a:hover{
     color: white;
+}
+.signup h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
 }
 #fr {
     display: inline-block;
