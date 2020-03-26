@@ -320,13 +320,17 @@ h2{
 .contact h2:hover{
     color: black;
 }
+.form-box h2{
+    font-size: small;
+
+}
 #frm {
     box-shadow: 3px 3px 3px 3px #0d8df0;
     background-color: transparent;
     opacity: 0.9;
     border-radius: 10px;
-    margin-left: 32%;
-    width: 300px;
+    margin-left: 37%;
+    width: 250px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -347,11 +351,23 @@ h2{
     box-shadow: 3px 3px 3px 3px #0d8df0;
     background-color: transparent;
     border-radius: 10px;
-    margin-left: 10%;
-    width: 400px;
+    margin-left: 20%;
+    width: 300px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+.input-group input {
+  width: 70%;
+  font-size: smaller;
+  margin: auto;
+  padding: 10 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 }
