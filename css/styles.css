@@ -52,7 +52,7 @@
     color: #0d8df0;
     box-shadow: 2px 2px 2px  #0d8df0;
     border-radius: 5px;
-    width: 11%;
+    width: 13%;
     font-size: medium;
     text-align: left;
     -webkit-border-radius: 5px;
@@ -65,7 +65,7 @@
      margin: 10px;
     box-shadow: 2px 2px 2px  #ffffff;
     border-radius: 5px;
-    width: 11%;
+    width: 13%;
     font-size: medium;
     text-align: left;
     -webkit-border-radius: 5px;
@@ -134,7 +134,7 @@ h2 {
     box-shadow: 3px 3px 3px 3px #0d8df0;
     background-color: transparent;
     border-radius: 15px;
-    margin-left: 30%;
+    margin-left: 32%;
     width: 500px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -213,7 +213,7 @@ h2 {
    opacity: 0.8;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   /* .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;
       padding-top: 4px 4px 4px 10px;
@@ -232,13 +232,14 @@ h2 {
          opacity: 0.8;
     }
     #lip{
+        font-family: cursive;
         cursor: pointer;
     margin: 10px;
     color: #0d8df0;
     box-shadow: 2px 2px 2px  #0d8df0;
     border-radius: 5px;
-    width: 16%;
-    font-size: small;
+    width: 20%;
+    font-size: smaller;
     text-align: left;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -302,9 +303,10 @@ ul {
 }
 ul a{
     text-align: left;
+    font-size: smaller;
 }
 h2{
-    margin-left: 30%;
+    margin-left: 24%;
      text-align: center;
     color: #0d8df0;
     font-size: large;
@@ -323,8 +325,8 @@ h2{
     background-color: transparent;
     opacity: 0.9;
     border-radius: 15px;
-    margin-left: 40%;
-    width: 500px;
+    margin-left: 32%;
+    width: 300px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
@@ -336,5 +338,17 @@ h2{
 }
 .signup a:hover{
     color: white;
+}
+#fr {
+    display: inline-block;
+    box-shadow: 3px 3px 3px 3px #0d8df0;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-left: 10%;
+    width: 400px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 }
