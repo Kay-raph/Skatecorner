@@ -1,0 +1,7 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head>
+<body>
+    if (isset($_POST['password'])) {<br>$loca=$_POST['location'];
+    <br>$name=$_POST['name'];<br>$email=$_POST['email'];<br>
+    $mobile=$_POST['mobile'];<br>$password=md5($_POST['password']);
+    <br>register($loca,$name,$email,$mobile,$password,$connection);<br>}
+</body></html>

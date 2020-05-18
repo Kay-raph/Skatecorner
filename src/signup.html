@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -83,69 +83,84 @@
     }
 </style>
 
-<body>
-    <div class="header">
-        <a href="about.html"><b>ABOUT US</b></a>
-        <a href="contact.html"><b>CONTACT US</b></a>
-        <a href="index.html"><b>HOME</b></a>
-    </div>
-    <div class="mg">
-        <a href="index.html"><img src="images/skaterr.png"></a>
-    </div><br><br><br>
-    <br>
+<body scroll-behavior: smooth;>
+<nav>
+    <img src="images/skaterr.png">
+    <a href="index.html"><b>HOME</b></a>
+    <a href="contact.html"><b>CONTACT US</b></a>
+    <a href="about.html"><b>ABOUT US</b></a>
+    <a href="signup.html"><b>SIGN UP</b></a>
+</nav>
+<br><br>
+
     <div class="signup">
         <h3><b>CREATE AN ACCOUNT</b></h3>
     </div>
-    <form class="col-sm-6 offset-sm-3 text-center" id="fr" autocomplete><br>
+    <div>
+    <form class="col-sm-6 offset-sm-3 text-center" id="fr" action="signup.php"  method="POST" autocomplete="on"><br>
         <p style="color:white; font-size: medium;"><b>Please fill in the blanks below</b></p>
         <div class="input-group">
             <input type="text" style="color: honeydew;" placeholder="First name" required
-                maxlength="20" autofocus>
+                maxlength="20" autofocus id="fname">
             <input type="text" style="color: honeydew;" placeholder="Last name" required
-                maxlength="20">
+                maxlength="20" id="lname">
             <!-- <input type="date" name="date" max="12-31-1985" min="12-31-2018"> -->
              <div class="tab"><b style="color: white;">Choose Date of Birth:</b>
-    <p><input placeholder="" type="date" max="12-31-1985" min="12-31-2018"></p>
+    <input placeholder="" type="date" max="12-31-1985" min="12-31-2018">
   </div>
 
             <input type="email" style="color: honeydew;" placeholder="Email" required>
             <input type="text" style="color: honeydew;" placeholder="Username" required
                 maxlength="10">
-            <input type="password" id="psw" name="psw" style="color: honeydew;" placeholder="Choose Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            <input type="password" id="pwd" name="psw" style="color: honeydew;" placeholder="Choose Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                 required>
-            <input type="password" id="psw" name="psw" style="color: honeydew;" placeholder="Re-enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            <input type="password" id="cpwd" name="psw" style="color: honeydew;" placeholder="Re-enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                 required>
             
+           
+        </div><br>
+        <center>
             <div class="gender">
                 <select id="gender" name="gender" style="background-color: #0d8df0;">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">Other</option>
                 </select>
-
-            </div><br><br><br>
-
-            <div class="uplod">
+        
+            </div><br>
+            <!-- <div class="uplod">
                 <p><b style="color: #ffffff; font-size: medium;">Upload Profile Picture</b></p>
-                <input type="file" name="myFile" width="25px">
-            </div>
-        </div>
-        <button type="submit" class="submit-btn"><a style="text-decoration: none;" href=""><b>SIGN UP</b></a></button>
-        <p style="color: #0d8df0;">By creating an account you agree to our <a href="#" style="color: darkgrey; text-decoration: none;">Terms & Privacy</a>.</p><br><br>
-    </form><br><br><br>
-    <div id="message">
+                <input type="file" name="myFile" width="50px" id="inptype">
+            </div> -->
+        </center>
+        <button type="submit" class="submit-btn" onclick=""><a style="text-decoration: none;" href=""><b>SIGN UP</b></a></button>
+        <p style="color: white; text-align: center;"><b>Already have an account? <a href="index.html" style="text-decoration: none; color: crimson;">Sign In</a></b></p>
+        <p style="color: #0d8df0;">By creating an account you agree to our <a href="#" style="color: darkgrey; text-decoration: none;">Terms & Privacy</a>.</p>
+    <br></form>
+</div>
+<br><br>
+<!-- <div class="footer">
+    <a href="https://www.facebook.com"><img src="soc/facebook.png"><b></b></a>
+    <a href="https://www.twitter.com"><img src="soc/twitter.png"><b></b></a>
+    <a href="https://www.instagram.com"><img src="soc/inst.png"><b></b></a>
+    <a href="https://www.pinterest.com"><img src="soc/pinterest.png"><b></b></a>
+    <a href="https://www.youtube.com/kayraph"><img src="soc/yut.png"><b></b></a>
+    <a href="https://www.meetup.com/kayraph"><img src="soc/meetup.png"><b></b></a>
+    <a href="https://www.github.io.com/kay-raph"><img src="soc/github.png"><b></b></a>
+    <p>&copy;2020<All><b>||</b>All Rights Reserved. | <a href="https://www.github.io.com/kay-raph">Design by Kevin
+                Raphael</a></p>
+</div> -->
+    <!-- <div id="message">
         <h3>Password must contain the following:</h3>
         <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
         <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
         <p id="number" class="invalid">A <b>number</b></p>
         <p id="length" class="invalid">Minimum <b>8 characters</b></p>
     </div>
-    <div class="footer">
-        <p>&copy;2020<a><b>||</b></a>All Rights Reserved.Design by Kevin Raphael</p>
-    </div>
-  <!-- <script>
+   
+  <script>
     var myInput = document.getElementById("psw");
     var letter = document.getElementById("letter");
     var capital = document.getElementById("capital");
@@ -203,12 +218,8 @@
             length.classList.add("invalid");
         }
     }
-</script> -->
-    <script src="scripts.js"></script>
-    </div>
-    <!-- <div class="footer">
-        <p>&copy;2020<a><b>||</b></a>All Rights Reserved.</p>
-    </div> -->
+</script> -->           
+            <script src="scripts.js"></script>
 </body>
 
 </html>

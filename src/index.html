@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bevan|Boogaloo|Bowlby+One+SC|Caveat+Brush|Changa+One|Chewy|Concert+One|Fredoka+One|Kumar+One|Lilita+One|Monoton|Nanum+Pen+Script|Patrick+Hand|Permanent+Marker|Rock+Salt|Rubik+Mono+One|Seymour+One|Sigmar+One|Special+Elite|Titan+One|Ultra&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amaranth|Anton|Baloo|Baloo+Bhai|Bowlby+One+SC|Calistoga|Concert+One|Fredoka+One|Fugaz+One|IBM+Plex+Mono|Modak|Pangolin|Rubik+Mono+One|Special+Elite|Varela+Round|Viga&display=swap"
+    rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js "
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
+
+  <link rel="icon" href="images\skaterr.png">
+  <title>Skatecorner</title>
+
+</head>
+<style>
+  body,
+  html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    background-image: url("images/home.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* add appropriate colors to fb, twitter and google buttons */
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+
+  .logi a {
+    width: 50%;
+    margin: auto;
+    padding: 20 50px;
+    margin-top: 10px;
+
+  }
+
+  /* style create account */
+  .cr {
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    padding: 30 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .cr:hover {
+    background-color: #0d8fd0;
+  }
+  @media screen and (max-width: 500px) {
+
+    body,
+    html {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin: 0px;
+      top: 0;
+      bottom: 0;
+      background-image: url("images/bts (9).jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .logi a {
+      width: 70%;
+      font-size: x-small;
+      margin: auto;
+      padding: 20 50px;
+      margin-top: 10px;
+
+    }
+
+    .cr a {
+      font-size: xx-small;
+      color: white;
+      cursor: pointer;
+      margin: auto;
+      padding: 20 50px;
+      margin-top: 10px;
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+</style>
+
+<body scroll-behavior: smooth;>
+  <nav>
+    <img src="images/skaterr.png">
+    <a href="index.html"><b>HOME</b></a>
+    <a href="contact.html"><b>CONTACT US</b></a>
+    <a href="about.html"><b>ABOUT US</b></a>
+    <a href="signup.html"><b>SIGN UP</b></a>
+  </nav>
+  <br><br>
+  <center>
+
+    <h2><b>Welcome to SkateCorner</b></h2>
+  </center>
+    <div class="form-box">
+      <form class="col-sm-6 offset-sm-3 text-center" id="frm"><br>
+        <p style="color:#0d8df0; font-size: large;"><b>Sign In</b></p>
+        <div class="input-group">
+          <input type="email/text" style="color: honeydew; " placeholder="Email or Username" required autofocus
+            autocomplete>
+          <input type="password" style="color: honeydew;" placeholder="Password" required>
+        </div>
+        <button type="submit" class="submit-btn"><a style="text-decoration: none;" href="#"><b>LOGIN</b></a></button>
+        <div class="signup">
+          <a href="#">
+            <p><b>Forgot Password?</b></p>
+          </a>
+          <p style="color: white;"><b>Login with</b></p>
+          <div class="logi">
+            <a href="#" class="fb btn">
+              <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+            </a>
+            <a href="#" class="twitter btn">
+              <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+            </a>
+            <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+              </i> Login with Google+
+            </a>
+          </div>
+          <p style="color: white;"><b>or</b></p>
+
+          <div class="cr" id="#cr"><a href="signup.html">
+              <p><b>Create an Account</b></p>
+            </a></div>
+        </div>
+        <br>
+      </form>
+      <br>
+    </div>
+    <br><br> 
+<!-- <div class="footer">
+  <a href="https://www.facebook.com"><img src="soc/face.png"><b></b></a>
+  <a href="https://www.twitter.com"><img src="soc/twee.png"><b></b></a>
+  <a href="https://www.instagram.com"><img src="soc/instag.png"><b></b></a>
+  <a href="https://www.pinterest.com"><img src="soc/pint.png"><b></b></a>
+  <a href="https://www.youtube.com/kayraph"><img src="soc/youtube (2).png"><b></b></a>
+  <a href="https://www.meetup.com/kayraph"><img src="soc/meetup.png"><b></b></a>
+  <a href="https://www.github.com/kay-raph"><img src="soc/gthub.png"><b></b></a>
+  <p>&copy;2020<All><b>||</b>All Rights Reserved. | <a href="https://www.github.com/kay-raph">Design by Kevin
+        Raphael</a></p>
+</div> -->
+  <script src="scripts.js"></script>
+</body>
+</html>
