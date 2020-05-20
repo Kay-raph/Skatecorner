@@ -101,23 +101,24 @@
         <p style="color:white; font-size: medium;"><b>Please fill in the blanks below</b></p>
         <div class="input-group">
             <input type="text" style="color: honeydew;" placeholder="First name" required
-                maxlength="20" autofocus id="fname">
+                maxlength="20" autofocus id="fname" name="firstName">
             <input type="text" style="color: honeydew;" placeholder="Last name" required
-                maxlength="20" id="lname">
-            <!-- <input type="date" name="date" max="12-31-1985" min="12-31-2018"> -->
+                maxlength="20" id="lname" name="lastName">
              <div class="tab"><b style="color: white;">Choose Date of Birth:</b>
-    <input placeholder="" type="date" max="12-31-1985" min="12-31-2018">
+    <input placeholder="" type="date" max="12-31-1985" min="12-31-2018" name="DOB">
   </div>
 
-            <input type="email" style="color: honeydew;" placeholder="Email" required>
+            <input type="email" style="color: honeydew;" placeholder="Email" required name="email">
             <input type="text" style="color: honeydew;" placeholder="Username" required
-                maxlength="10">
+                maxlength="10" name="userName">
             <input type="password" id="pwd" name="psw" style="color: honeydew;" placeholder="Choose Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                 required>
+<!--
             <input type="password" id="cpwd" name="psw" style="color: honeydew;" placeholder="Re-enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                 required>
+-->
             
            
         </div><br>
@@ -130,6 +131,10 @@
                 </select>
         
             </div><br>
+            <div class="input-group">
+            <input type="number" style="color: honeydew;" placeholder="number" required 
+                maxlength="10" name="number">
+                <div>
             <!-- <div class="uplod">
                 <p><b style="color: #ffffff; font-size: medium;">Upload Profile Picture</b></p>
                 <input type="file" name="myFile" width="50px" id="inptype">
